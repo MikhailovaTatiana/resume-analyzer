@@ -3,7 +3,7 @@ services:
   - type: web
     name: resume-analyzer-api
     env: python
-    plan: free
+    plan: free_2023
     buildCommand: chmod +x build.sh && ./build.sh
     startCommand: chmod +x start.sh && ./start.sh
     rootDir: backend
@@ -15,7 +15,7 @@ services:
   - type: web
     name: resume-analyzer-frontend
     env: static
-    plan: free
+    plan: free_2023
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     rootDir: frontend
