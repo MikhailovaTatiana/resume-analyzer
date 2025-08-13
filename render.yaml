@@ -21,4 +21,4 @@ services:
     rootDir: frontend
     envVars:
       - key: VITE_API_URL
-        value: https://resume-analyzer-api.onrender.com
+        value: https://resume-analyzer-api-1vug.onrender.com

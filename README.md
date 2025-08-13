@@ -161,6 +161,9 @@ python, fastapi, react, typescript, machine learning, docker, aws, sql, git, agi
 
 This application is designed to be deployed on Render. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 
+### Live Demo
+🌐 **Try it out:** [The Render App Link Here](https://resume-analyzer-frontend-c04f.onrender.com)
+
 ### Quick Deployment Steps:
 1. Push your code to GitHub
 2. Connect your repository to Render
