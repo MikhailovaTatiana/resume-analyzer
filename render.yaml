@@ -1,0 +1,24 @@
+services:
+  # Backend API service
+  - type: web
+    name: resume-analyzer-api
+    env: python
+    plan: free
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: chmod +x start.sh && ./start.sh
+    rootDir: backend
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
+  # Frontend service
+  - type: web
+    name: resume-analyzer-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    rootDir: frontend
+    envVars:
+      - key: VITE_API_URL
+        value: https://resume-analyzer-api.onrender.com
